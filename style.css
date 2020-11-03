@@ -1,0 +1,37 @@
+ul.list {
+    list-style-type: none;
+}
+
+ul.list > li {
+    margin: .5rem;
+    padding: .25rem;
+    box-shadow: 0 0 5px 1px;
+    transition: transform 0.5s, background-color 1s;
+}
+
+ul.list > li:hover {
+    cursor: pointer;
+    transform: translateY(4px);
+    background-color: rgba(170, 184, 226, 0.767);
+}
+
+/*
+x  y     <- all descendants (childrens children etc.)
+vs
+x > y    <- all direct children
+vs
+x, y     <- either x or y
+
+Ancestor?
+Descendant?
+Parent?
+Child?
+
+<section class="outer">  <- parent and ancestor
+    <h3> ...   <- child to .outer
+    <section class="inner">  <- child to .outer
+        <p> ...  <- child to .inner AND descendant to .outer
+    </section>
+</section>
+
+ */
