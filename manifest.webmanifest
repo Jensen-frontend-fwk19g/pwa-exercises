@@ -1,0 +1,19 @@
+{
+  "name": "Övningar PWA",
+  "short_name": "PWA",
+  "description": "En enkel PWA app som ska vara installerbar",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "img/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "img/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
